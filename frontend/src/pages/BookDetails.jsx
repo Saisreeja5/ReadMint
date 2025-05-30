@@ -10,7 +10,7 @@ const BookDetails = () => {
 
   useEffect(() => {
     const fetchBook = async () => {
-      const res = await axios.get(`http://localhost:5000/api/reviews/${id}`);
+      const res = await axios.get(`https://readmint.onrender.com/api/reviews/${id}`);
       setBook(res.data.book);
       setReviews(res.data.reviews || []);
     };
@@ -23,14 +23,14 @@ const BookDetails = () => {
   const token = localStorage.getItem("jwtToken");
 
   try {
-    await axios.post(`http://localhost:5000/api/reviews/delete/${reviewId}`, {},{
+    await axios.post(`https://readmint.onrender.com/api/reviews/delete/${reviewId}`, {},{
       headers: {
         Authorization: `Bearer ${token}`,
       },
     });
 
     // Refetch reviews after deletion
-    const updated = await axios.get(`http://localhost:5000/api/reviews/${id}`);
+    const updated = await axios.get(`https://readmint.onrender.com/api/reviews/${id}`);
     setReviews(updated.data.reviews || []);
   } catch (error) {
     console.error("Error deleting review:", error);
@@ -44,13 +44,13 @@ const BookDetails = () => {
 
     const token = localStorage.getItem("jwtToken");
     await axios.post(
-      `http://localhost:5000/api/reviews/${id}`,
+      `https://readmint.onrender.com/api/reviews/${id}`,
       { comment: reviewText },
       { headers: { Authorization: `Bearer ${token}` } }
     );
 
     setReviewText("");
-    const updated = await axios.get(`http://localhost:5000/api/reviews/${id}`);
+    const updated = await axios.get(`https://readmint.onrender.com/api/reviews/${id}`);
     setReviews(updated.data.reviews || []);
     console.log(reviews);
   };
