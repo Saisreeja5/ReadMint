@@ -31,7 +31,7 @@ const SignIn = () => {
     
 
       const backendResponse = await axios.post(
-        "https://readmint.onrender.com/api/auth/google",
+        "https://readmint-1.onrender.com/api/auth/google",
         { token: credential }
       );
 

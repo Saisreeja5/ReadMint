@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const res = await axios.get("https://readmint.onrender.com/api/books?limit=4");
+        const res = await axios.get("https://readmint-1.onrender.com/api/books?limit=4");
         setBooks(res.data.books);
       } catch (error) {
         console.error("Error fetching books:", error);

@@ -19,7 +19,7 @@ const AddBook = () => {
 
     try {
       // Sending POST request to backend
-      const response = await axios.post("https://readmint.onrender.com/api/books", {
+      const response = await axios.post("https://readmint-1.onrender.com/api/books", {
         title,
         author,
         description,

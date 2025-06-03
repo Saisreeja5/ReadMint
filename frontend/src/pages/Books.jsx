@@ -9,7 +9,7 @@ const Books = () => {
    useEffect(() => {
   const fetchBooks = async () => {
     try {
-      const response = await axios.get('https://readmint.onrender.com/api/books');
+      const response = await axios.get('https://readmint-1.onrender.com/api/books');
       console.log(response);
       setBooks(response.data.books);
     } catch (error) {
