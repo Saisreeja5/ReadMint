@@ -17,7 +17,7 @@ connectDB();
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://readmint-1.onrender.com", // or "*" for dev
+    origin: "https://read-mint-2.vercel.app", // or "*" for dev
     credentials: true
   }));
 
