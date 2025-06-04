@@ -27,7 +27,7 @@ const NavBar = () => {
           ReadMint
         </Link>
       </div>
-      <div className="flex gap-4 items-center mr-10">
+      <div className="flex gap-4 items-center mr-8 ml-3">
         
         {user ? (
           <>
