@@ -23,7 +23,7 @@ const NavBar = () => {
            R
        </span>
       </div>
-        <Link to="/home" className="text-xl font-bold ">
+        <Link to="/home" className="text-xl font-bold ml-2 ">
           ReadMint
         </Link>
       </div>

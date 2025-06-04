@@ -31,7 +31,7 @@ const Home = () => {
             transition={{ duration: 0.5 }}
             className="flex flex-col items-center gap-8 text-center"
           >
-            <h1 className="bg-black  bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-6xl lg:text-7xl  max-lg:px-4">
+            <h1 className="bg-red-900  bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-6xl lg:text-7xl  max-lg:px-4">
               Connect, Share and Trade Your Favourite Reads...
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground max-sm:px-1">
@@ -60,7 +60,7 @@ const Home = () => {
           {books.map((book) => (
            <div
                key={book._id}
-               className="rounded-lg shadow-md overflow-hidden bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800"
+               className="rounded-lg shadow-md overflow-hidden bg-white border border-neutral-200 "
            >
           <div className="w-full aspect-[3/4] relative overflow-hidden rounded">
           <img
