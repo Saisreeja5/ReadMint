@@ -31,7 +31,7 @@ const Home = () => {
             transition={{ duration: 0.5 }}
             className="flex flex-col items-center gap-8 text-center"
           >
-            <h1 className="bg-gradient-to-r from-neutral-900 to-neutral-600 bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-6xl lg:text-7xl dark:from-neutral-50 dark:to-neutral-300 max-lg:px-4">
+            <h1 className="bg-black  bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-6xl lg:text-7xl  max-lg:px-4">
               Connect, Share and Trade Your Favourite Reads...
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground max-sm:px-1">
