@@ -8,7 +8,7 @@ const NavBar = () => {
 
   return (
     <nav className="flex items-center justify-between py-3 shadow">
-      <div className="flex items-center gap-5 ml-4 ">
+      <div className="flex items-center gap-2 ">
       <div className="relative size-10">
       <motion.div
         className="absolute inset-0 rounded-md bg-black"
@@ -23,7 +23,7 @@ const NavBar = () => {
            R
        </span>
       </div>
-        <Link to="/home" className="text-xl font-bold ml-2 ">
+        <Link to="/home" className="text-xl font-bold mr-2 ">
           ReadMint
         </Link>
       </div>
